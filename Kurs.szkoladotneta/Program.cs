@@ -54,10 +54,10 @@ namespace Program
             string surname5;
             int age5;
             char sex5;
-            long pesel5;
+            string pesel5;
             double weight5;
             double height5;
-            long phone5;
+            string phone5;
             string email5;
 
 
@@ -80,9 +80,8 @@ namespace Program
 
 
             Console.WriteLine("Proszę podaj PESEL");
-            choice = Console.ReadLine();
-            long.TryParse(choice, out pesel5);
-
+            pesel5 = Console.ReadLine();
+            
             Console.WriteLine("Proszę podaj wagę");
             choice = Console.ReadLine();
             double.TryParse(choice, out weight5);
@@ -92,8 +91,7 @@ namespace Program
             double.TryParse(choice, out height5);
 
             Console.WriteLine("Proszę podaj nr telefonu");
-            choice = Console.ReadLine();
-            long.TryParse(choice, out phone5);
+            phone5 = Console.ReadLine();
 
             Console.WriteLine("Proszę podaj adres email");
             email5 = Console.ReadLine();
